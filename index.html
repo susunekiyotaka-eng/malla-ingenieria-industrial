@@ -7,70 +7,132 @@
 </head>
 <body>
 
-<h1>Malla Interactiva - Ingeniería Industrial 💗</h1>
-<div class="malla">
+<h1>Malla Interactiva - Ingeniería Industrial</h1>
 
-<!-- I SEMESTRE -->
+<div class="grid-malla">
+
+<!-- I -->
 <div class="semestre">
-<h2>I SEMESTRE</h2>
+<h3>I</h3>
 <div class="curso" data-id="algebra">ÁLGEBRA LINEAL</div>
 <div class="curso" data-id="calculo1">CÁLCULO EN UNA VARIABLE</div>
 <div class="curso" data-id="quimica">QUÍMICA GENERAL</div>
 <div class="curso" data-id="dibujo">DIBUJO EN INGENIERÍA</div>
 <div class="curso" data-id="metodologia">METODOLOGÍA DEL TRABAJO ACADÉMICO</div>
 <div class="curso" data-id="intro">INTRODUCCIÓN A LA INGENIERÍA</div>
-<div class="curso" data-id="analisis">ANÁLISIS SITUACIONAL Y PROSPECTIVA DIGITAL</div>
+<div class="curso" data-id="analisisdigital">ANÁLISIS SITUACIONAL Y PROSPECTIVA DIGITAL</div>
 </div>
 
-<!-- II SEMESTRE -->
+<!-- II -->
 <div class="semestre">
-<h2>II SEMESTRE</h2>
-<div class="curso" data-id="realidad">REALIDAD NACIONAL</div>
+<h3>II</h3>
+<div class="curso">REALIDAD NACIONAL</div>
 <div class="curso bloqueado" data-id="calculo2" data-prereq="calculo1">CÁLCULO EN VARIAS VARIABLES</div>
-<div class="curso" data-id="fisica1">FÍSICA I</div>
+<div class="curso bloqueado" data-id="fisica1" data-prereq="calculo1">FÍSICA I</div>
 <div class="curso bloqueado" data-id="quimicaOrg" data-prereq="quimica">QUÍMICA ORGÁNICA</div>
 <div class="curso bloqueado" data-id="geometria" data-prereq="dibujo">GEOMETRÍA DESCRIPTIVA</div>
-<div class="curso" data-id="linguistica">LINGÜÍSTICA, COMPRENSIÓN Y REDACCIÓN ACADÉMICA</div>
-<div class="curso" data-id="datos">FUNDAMENTOS DE LA CIENCIA DE DATOS</div>
+<div class="curso">LINGÜÍSTICA, COMPRENSIÓN Y REDACCIÓN ACADÉMICA</div>
+<div class="curso">FUNDAMENTOS DE LA CIENCIA DE DATOS</div>
 </div>
 
-<!-- III SEMESTRE -->
+<!-- III -->
 <div class="semestre">
-<h2>III SEMESTRE</h2>
-<div class="curso" data-id="ciudadania">CIUDADANÍA E INTERCULTURALIDAD</div>
-<div class="curso bloqueado" data-id="economiaIng" data-prereq="intro">ECONOMÍA EN INGENIERÍA</div>
+<h3>III</h3>
+<div class="curso">CIUDADANÍA E INTERCULTURALIDAD</div>
+<div class="curso bloqueado" data-id="economia" data-prereq="intro">ECONOMÍA EN INGENIERÍA</div>
 <div class="curso bloqueado" data-id="fisicoquimica" data-prereq="quimicaOrg">FISICOQUÍMICA</div>
 <div class="curso bloqueado" data-id="fisica2" data-prereq="fisica1">FÍSICA II</div>
 <div class="curso bloqueado" data-id="ecuaciones" data-prereq="calculo2">ECUACIONES DIFERENCIALES</div>
 <div class="curso bloqueado" data-id="estatica" data-prereq="fisica1">ESTÁTICA Y RESISTENCIA DE MATERIALES</div>
-<div class="curso" data-id="liderazgo">DESARROLLO EMOCIONAL Y LIDERAZGO</div>
+<div class="curso">DESARROLLO EMOCIONAL, GESTIÓN DE CONFLICTOS Y LIDERAZGO</div>
 </div>
 
-<!-- IV SEMESTRE -->
+<!-- IV -->
 <div class="semestre">
-<h2>IV SEMESTRE</h2>
+<h3>IV</h3>
 <div class="curso bloqueado" data-id="algoritmos" data-prereq="calculo2">ALGORITMOS Y PROGRAMACIÓN</div>
-<div class="curso" data-id="ecologia">ECOLOGÍA Y CONSERVACIÓN AMBIENTAL</div>
-<div class="curso bloqueado" data-id="analisis1" data-prereq="economiaIng">ANÁLISIS DE DATOS I</div>
-<div class="curso bloqueado" data-id="termodinamica" data-prereq="fisicoquimica">TERMODINÁMICA</div>
-<div class="curso" data-id="electricidad">ELECTRICIDAD Y SISTEMAS</div>
-<div class="curso bloqueado" data-id="financiera1" data-prereq="economiaIng">INGENIERÍA FINANCIERA I</div>
+<div class="curso">ECOLOGÍA Y CONSERVACIÓN AMBIENTAL</div>
+<div class="curso bloqueado" data-id="analisis1" data-prereq="economia">ANÁLISIS DE DATOS I</div>
+<div class="curso bloqueado" data-id="termo" data-prereq="fisicoquimica">TERMODINÁMICA</div>
+<div class="curso">ELECTRICIDAD Y SISTEMAS DE ALIMENTACIÓN Y PROTECCIÓN</div>
+<div class="curso bloqueado" data-id="finanzas1" data-prereq="economia">INGENIERÍA FINANCIERA I</div>
 </div>
 
-<!-- V SEMESTRE -->
+<!-- V -->
 <div class="semestre">
-<h2>V SEMESTRE</h2>
+<h3>V</h3>
 <div class="curso">INTRODUCCIÓN A LA METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA</div>
 <div class="curso bloqueado" data-id="analisis2" data-prereq="analisis1">ANÁLISIS DE DATOS II</div>
 <div class="curso bloqueado" data-id="metodos1" data-prereq="analisis1">INGENIERÍA DE MÉTODOS I</div>
-<div class="curso">CONTROL DE PROCESOS</div>
-<div class="curso bloqueado" data-id="costos" data-prereq="financiera1">INGENIERÍA DE COSTOS Y PRESUPUESTOS</div>
-<div class="curso bloqueado" data-id="procesos" data-prereq="termodinamica">PROCESOS Y OPERACIONES UNITARIAS</div>
+<div class="curso bloqueado" data-id="control" data-prereq="analisis1">CONTROL DE PROCESOS</div>
+<div class="curso bloqueado" data-id="costos" data-prereq="finanzas1">INGENIERÍA DE COSTOS Y PRESUPUESTOS</div>
+<div class="curso bloqueado" data-id="procesos" data-prereq="termo">PROCESOS Y OPERACIONES UNITARIAS</div>
 </div>
 
-<!-- (El resto sigue exactamente igual ya configurado con sus dependencias correctas…) -->
+<!-- VI -->
+<div class="semestre">
+<h3>VI</h3>
+<div class="curso bloqueado" data-id="io1" data-prereq="algoritmos">INVESTIGACIÓN OPERATIVA I</div>
+<div class="curso bloqueado" data-id="metodos2" data-prereq="metodos1">INGENIERÍA DE MÉTODOS II</div>
+<div class="curso bloqueado" data-id="manufactura" data-prereq="procesos">PROCESOS DE MANUFACTURA</div>
+<div class="curso bloqueado" data-id="seguridad" data-prereq="costos">INGENIERÍA DE SEGURIDAD</div>
+<div class="curso bloqueado" data-id="produccion" data-prereq="metodos1">INGENIERÍA DE PRODUCCIÓN</div>
+<div class="curso bloqueado" data-id="finanzas2" data-prereq="finanzas1">INGENIERÍA FINANCIERA II</div>
+<div class="curso bloqueado" data-id="plantas" data-prereq="estatica">DISEÑO DE PLANTAS INDUSTRIALES</div>
+<div class="curso">POLÍTICAS PÚBLICAS Y ANTICORRUPCIÓN</div>
+</div>
+
+<!-- VII -->
+<div class="semestre">
+<h3>VII</h3>
+<div class="curso">GESTIÓN DEL TALENTO HUMANO</div>
+<div class="curso bloqueado" data-id="mercado" data-prereq="analisis2">ANÁLISIS E INVESTIGACIÓN DE MERCADO</div>
+<div class="curso bloqueado" data-id="io2" data-prereq="io1">INVESTIGACIÓN OPERATIVA II</div>
+<div class="curso bloqueado" data-id="sistemas" data-prereq="analisis2">SISTEMAS DE INFORMACIÓN</div>
+<div class="curso bloqueado" data-id="ergonomia" data-prereq="metodos2">INGENIERÍA ERGONÓMICA</div>
+<div class="curso">INGLÉS</div>
+<div class="curso">ÉTICA GENERAL Y DEONTOLOGÍA</div>
+</div>
+
+<!-- VIII -->
+<div class="semestre">
+<h3>VIII</h3>
+<div class="curso bloqueado" data-id="proyectos" data-prereq="mercado">FORMULACIÓN Y EVALUACIÓN DE PROYECTOS</div>
+<div class="curso">AUTOMATIZACIÓN INDUSTRIAL</div>
+<div class="curso bloqueado" data-id="producto" data-prereq="mercado">GERENCIA DE MARKETING</div>
+<div class="curso bloqueado" data-id="mantenimiento" data-prereq="seguridad">INGENIERÍA DE MANTENIMIENTO</div>
+<div class="curso">TALLER DE INNOVACIÓN</div>
+<div class="curso">SISTEMAS DE GESTIÓN DE LA CALIDAD</div>
+</div>
+
+<!-- IX -->
+<div class="semestre">
+<h3>IX</h3>
+<div class="curso">ADMINISTRACIÓN ESTRATÉGICA</div>
+<div class="curso bloqueado" data-prereq="producto">INGENIERÍA DEL PRODUCTO</div>
+<div class="curso bloqueado" data-prereq="mantenimiento">LOGÍSTICA INDUSTRIAL</div>
+<div class="curso bloqueado" data-prereq="io2">SIMULACIÓN DE SISTEMAS</div>
+<div class="curso">GESTIÓN DE PROYECTOS</div>
+<div class="curso">INTELIGENCIA ARTIFICIAL</div>
+<div class="curso">GESTIÓN AMBIENTAL</div>
+</div>
+
+<!-- X -->
+<div class="semestre">
+<h3>X</h3>
+<div class="curso">TRABAJO DE INVESTIGACIÓN</div>
+<div class="curso">PRÁCTICAS PRE PROFESIONALES</div>
+<div class="curso">INDUSTRIA TEXTIL Y CONFECCIONES</div>
+<div class="curso">COMERCIO INTERNACIONAL</div>
+<div class="curso">PROYECTOS DE INVERSIÓN PUBLICA</div>
+<div class="curso">AGRONEGOCIOS</div>
+<div class="curso">PROCESOS MINEROS Y METALÚRGICOS</div>
+<div class="curso">GESTIÓN DE LA ENERGÍA</div>
+<div class="curso bloqueado" data-prereq="produccion">GESTIÓN DE OPERACIONES</div>
+</div>
 
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
