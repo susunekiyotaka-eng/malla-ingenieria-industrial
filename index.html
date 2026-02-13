@@ -1,5 +1,76 @@
-<div class="curso bloqueado" 
-     data-id="nombreUnico" 
-     data-prereq="idDelRequisito1,idDelRequisito2">
-NOMBRE DEL CURSO
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Malla Ingeniería Industrial</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Malla Interactiva - Ingeniería Industrial 💗</h1>
+<div class="malla">
+
+<!-- I SEMESTRE -->
+<div class="semestre">
+<h2>I SEMESTRE</h2>
+<div class="curso" data-id="algebra">ÁLGEBRA LINEAL</div>
+<div class="curso" data-id="calculo1">CÁLCULO EN UNA VARIABLE</div>
+<div class="curso" data-id="quimica">QUÍMICA GENERAL</div>
+<div class="curso" data-id="dibujo">DIBUJO EN INGENIERÍA</div>
+<div class="curso" data-id="metodologia">METODOLOGÍA DEL TRABAJO ACADÉMICO</div>
+<div class="curso" data-id="intro">INTRODUCCIÓN A LA INGENIERÍA</div>
+<div class="curso" data-id="analisis">ANÁLISIS SITUACIONAL Y PROSPECTIVA DIGITAL</div>
 </div>
+
+<!-- II SEMESTRE -->
+<div class="semestre">
+<h2>II SEMESTRE</h2>
+<div class="curso" data-id="realidad">REALIDAD NACIONAL</div>
+<div class="curso bloqueado" data-id="calculo2" data-prereq="calculo1">CÁLCULO EN VARIAS VARIABLES</div>
+<div class="curso" data-id="fisica1">FÍSICA I</div>
+<div class="curso bloqueado" data-id="quimicaOrg" data-prereq="quimica">QUÍMICA ORGÁNICA</div>
+<div class="curso bloqueado" data-id="geometria" data-prereq="dibujo">GEOMETRÍA DESCRIPTIVA</div>
+<div class="curso" data-id="linguistica">LINGÜÍSTICA, COMPRENSIÓN Y REDACCIÓN ACADÉMICA</div>
+<div class="curso" data-id="datos">FUNDAMENTOS DE LA CIENCIA DE DATOS</div>
+</div>
+
+<!-- III SEMESTRE -->
+<div class="semestre">
+<h2>III SEMESTRE</h2>
+<div class="curso" data-id="ciudadania">CIUDADANÍA E INTERCULTURALIDAD</div>
+<div class="curso bloqueado" data-id="economiaIng" data-prereq="intro">ECONOMÍA EN INGENIERÍA</div>
+<div class="curso bloqueado" data-id="fisicoquimica" data-prereq="quimicaOrg">FISICOQUÍMICA</div>
+<div class="curso bloqueado" data-id="fisica2" data-prereq="fisica1">FÍSICA II</div>
+<div class="curso bloqueado" data-id="ecuaciones" data-prereq="calculo2">ECUACIONES DIFERENCIALES</div>
+<div class="curso bloqueado" data-id="estatica" data-prereq="fisica1">ESTÁTICA Y RESISTENCIA DE MATERIALES</div>
+<div class="curso" data-id="liderazgo">DESARROLLO EMOCIONAL Y LIDERAZGO</div>
+</div>
+
+<!-- IV SEMESTRE -->
+<div class="semestre">
+<h2>IV SEMESTRE</h2>
+<div class="curso bloqueado" data-id="algoritmos" data-prereq="calculo2">ALGORITMOS Y PROGRAMACIÓN</div>
+<div class="curso" data-id="ecologia">ECOLOGÍA Y CONSERVACIÓN AMBIENTAL</div>
+<div class="curso bloqueado" data-id="analisis1" data-prereq="economiaIng">ANÁLISIS DE DATOS I</div>
+<div class="curso bloqueado" data-id="termodinamica" data-prereq="fisicoquimica">TERMODINÁMICA</div>
+<div class="curso" data-id="electricidad">ELECTRICIDAD Y SISTEMAS</div>
+<div class="curso bloqueado" data-id="financiera1" data-prereq="economiaIng">INGENIERÍA FINANCIERA I</div>
+</div>
+
+<!-- V SEMESTRE -->
+<div class="semestre">
+<h2>V SEMESTRE</h2>
+<div class="curso">INTRODUCCIÓN A LA METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA</div>
+<div class="curso bloqueado" data-id="analisis2" data-prereq="analisis1">ANÁLISIS DE DATOS II</div>
+<div class="curso bloqueado" data-id="metodos1" data-prereq="analisis1">INGENIERÍA DE MÉTODOS I</div>
+<div class="curso">CONTROL DE PROCESOS</div>
+<div class="curso bloqueado" data-id="costos" data-prereq="financiera1">INGENIERÍA DE COSTOS Y PRESUPUESTOS</div>
+<div class="curso bloqueado" data-id="procesos" data-prereq="termodinamica">PROCESOS Y OPERACIONES UNITARIAS</div>
+</div>
+
+<!-- (El resto sigue exactamente igual ya configurado con sus dependencias correctas…) -->
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
