@@ -8,7 +8,6 @@ document.querySelectorAll(".curso").forEach(curso => {
     }
 
     this.classList.add("aprobado");
-
     desbloquearCursos();
   });
 
@@ -19,7 +18,6 @@ function desbloquearCursos(){
   document.querySelectorAll(".curso.bloqueado").forEach(curso => {
 
     let prereqs = curso.getAttribute("data-prereq");
-
     if(!prereqs) return;
 
     let requisitos = prereqs.split(",");
