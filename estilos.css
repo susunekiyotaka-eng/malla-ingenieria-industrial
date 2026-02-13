@@ -1,38 +1,44 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #ffe6f0, #ffd6eb);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#ffd6ec,#ffeaf6);
   margin: 0;
-  padding: 20px;
-  text-align: center;
+  padding: 30px;
 }
 
 h1 {
+  text-align: center;
   color: #c2185b;
+  margin-bottom: 40px;
 }
 
-.malla {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.grid-malla {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
 }
 
 .semestre {
   background: white;
   padding: 15px;
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 0 8px 20px rgba(255,105,180,0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.semestre h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ad1457;
 }
 
 .curso {
   background: #f8bbd0;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
-  font-size: 13px;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.2s;
 }
 
 .curso:hover {
@@ -40,12 +46,12 @@ h1 {
 }
 
 .aprobado {
-  background: #ec407a !important;
+  background: #e91e63;
   color: white;
 }
 
 .bloqueado {
-  background: #fce4ec !important;
+  background: #fce4ec;
   opacity: 0.5;
   cursor: not-allowed;
 }
