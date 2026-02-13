@@ -2,32 +2,30 @@ document.querySelectorAll(".curso").forEach(curso => {
 
   curso.addEventListener("click", function(){
 
-    if(this.classList.contains("bloqueado")){
-      alert("Debes aprobar su requisito primero 💗");
-      return;
-    }
+    if(this.classList.contains("bloqueado")) return;
+    if(this.classList.contains("aprobado")) return;
 
     this.classList.add("aprobado");
-    desbloquearCursos();
+    actualizar();
   });
 
 });
 
-function desbloquearCursos(){
+function actualizar(){
 
   document.querySelectorAll(".curso.bloqueado").forEach(curso => {
 
-    let prereqs = curso.getAttribute("data-prereq");
-    if(!prereqs) return;
+    const prereq = curso.getAttribute("data-prereq");
+    if(!prereq) return;
 
-    let requisitos = prereqs.split(",");
+    const requisitos = prereq.split(",");
 
-    let todosAprobados = requisitos.every(req =>
+    const listo = requisitos.every(req =>
       document.querySelector(`[data-id='${req.trim()}']`)
       ?.classList.contains("aprobado")
     );
 
-    if(todosAprobados){
+    if(listo){
       curso.classList.remove("bloqueado");
     }
 
